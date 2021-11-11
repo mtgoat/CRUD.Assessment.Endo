@@ -1,0 +1,52 @@
+{
+  "guests": [
+    {
+      "id": 1,
+      "name": "John Stamos",
+      "age": 58,
+      "favoriteDish": "Sweet Potatoes",
+      "rightHanded": true,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/John_Stamos_at_PaleyFest_2013.jpg/800px-John_Stamos_at_PaleyFest_2013.jpg"
+    },
+    {
+      "id": 2,
+      "name": "James Bond",
+      "age": 40,
+      "favoriteDish": "Shaken Dirties",
+      "rightHanded": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c5/Fleming007impression.jpg"
+    },
+    {
+      "id": 3,
+      "name": "John Stamos",
+      "age": 58,
+      "favoriteDish": "Mac N Cheese",
+      "rightHanded": true,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRswV8rkX_9XlysOOUTijtVzzLvvpGHynHcQQ&usqp=CAU"
+    },
+    {
+      "name": "Sarah Brooks",
+      "age": "21",
+      "favoriteDish": "Cranberry Sauce",
+      "imageUrl": "https://shenandoahcountyva.us/bos/wp-content/uploads/sites/4/2018/01/picture-not-available-clipart-12.jpg",
+      "rightHanded": false,
+      "id": 5
+    },
+    {
+      "name": "Aki Endo",
+      "age": "21",
+      "favoriteDish": "Stuffing",
+      "imageUrl": "https://shenandoahcountyva.us/bos/wp-content/uploads/sites/4/2018/01/picture-not-available-clipart-12.jpg",
+      "rightHanded": true,
+      "id": 6
+    },
+    {
+      "name": "Heaven Burdette",
+      "age": "21",
+      "favoriteDish": "Sweet Potatoes",
+      "imageUrl": "https://shenandoahcountyva.us/bos/wp-content/uploads/sites/4/2018/01/picture-not-available-clipart-12.jpg",
+      "rightHanded": true,
+      "id": 7
+    }
+  ]
+}
