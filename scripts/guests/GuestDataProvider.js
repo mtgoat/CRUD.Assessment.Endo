@@ -30,3 +30,4 @@ export const deleteGuest =(guestId) => {
         method: "DELETE"
     })
 }
+
