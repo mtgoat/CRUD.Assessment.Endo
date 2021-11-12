@@ -14,22 +14,30 @@ export const GuestEditForm = (guestId) => {
     <input type="text" id="guest-url" value="${guestWeWantToEdit.imageUrl}"/>
     <input type="number" id="guest-age" value="${guestWeWantToEdit.age}" id="guest-age" />
     <input type="text" value="${guestWeWantToEdit.favoriteDish}" id="guest-dish" />
-    <input type="checkbox" value="${guestWeWantToEdit.rightHanded}" id="guest-dish" />
+
+    <label for ="righthanded" display="block"> Are you right handed? Yes:<input type="checkbox" checked="${guestWeWantToEdit.rightHanded}" id="guest-hand" />
+    
     <button id="saveNoteChanges-${guestId}">Save Changes</button>
     
     `
 }
+//line 18: checked=guestWeWantToEdit.rightHaded makes it to check if it is true
+
 
 contentTarget.addEventListener("click", (event) => {
     if(event.target.id.startsWith("saveNoteChanges")){
+        debugger
 
+       
+        
         // Make a new object representation of a note
         const editedGuest = {
             id: event.target.id.split("-")[1],// how can you get the note's id?
             name: document.querySelector("#guest-name").value,// get value of text from input
             age: document.querySelector("#guest-age").value,// get value of suspect from input,
             favoriteDish: document.querySelector("#guest-dish").value,// get value of date from input
-            rightHanded:document.querySelector("#guest-dish").value,
+            rightHanded:document.querySelector("#guest-hand").checked,
+            //.checked gets a value of true if it is checked, and false if it is not checked
             imageUrl:document.querySelector("#guest-url").value
         }
 
