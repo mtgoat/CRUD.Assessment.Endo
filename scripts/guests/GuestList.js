@@ -20,7 +20,7 @@ export const GuestList = (dropdownSelector, choosenFilter) => {
 
         guestArray.forEach((singleEntryObject) =>
         {
-guestHTML += guest(singleEntryObject);
+            guestHTML += guest(singleEntryObject);
         });
 
         contentTarget.innerHTML += `

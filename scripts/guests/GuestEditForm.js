@@ -1,5 +1,5 @@
 import { useGuests, updateGuest } from "./GuestDataProvider.js";
-
+import { GuestList } from "./GuestList.js"
 
 const contentTarget = document.querySelector(".form")
 
@@ -34,6 +34,7 @@ contentTarget.addEventListener("click", (event) => {
         }
 
         // Send to json-server and refresh the list
+        console.log(editedGuest)
         updateGuest(editedGuest).then(GuestList)
 
     }

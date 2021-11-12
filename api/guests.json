@@ -33,12 +33,12 @@
       "id": 5
     },
     {
+      "id": 6,
       "name": "Aki Endo",
-      "age": "21",
-      "favoriteDish": "Stuffing",
-      "imageUrl": "https://shenandoahcountyva.us/bos/wp-content/uploads/sites/4/2018/01/picture-not-available-clipart-12.jpg",
-      "rightHanded": true,
-      "id": 6
+      "age": "55",
+      "favoriteDish": "Cranberry Sauce",
+      "rightHanded": "Cranberry Sauce",
+      "imageUrl": "https://shenandoahcountyva.us/bos/wp-content/uploads/sites/4/2018/01/picture-not-available-clipart-12.jpg"
     },
     {
       "name": "Heaven Burdette",
