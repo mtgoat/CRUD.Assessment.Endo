@@ -15,21 +15,24 @@ export const GuestEditForm = (guestId) => {
     <input type="number" id="guest-age" value="${guestWeWantToEdit.age}" id="guest-age" />
     <input type="text" value="${guestWeWantToEdit.favoriteDish}" id="guest-dish" />
 
-    <label for ="righthanded" display="block"> Are you right handed? Yes:<input type="checkbox" checked="${guestWeWantToEdit.rightHanded}" id="guest-hand" />
+    <label for ="righthanded" display="block"> Are you right handed? Yes:</label>
     
+    ${guestWeWantToEdit.rightHanded ? `<input type="checkbox" checked id="guest-hand" />`:
+    `
+    <input type="checkbox" unchecked id="guest-hand" />
+    `
+    }
+        
     <button id="saveNoteChanges-${guestId}">Save Changes</button>
     
     `
 }
-//line 18: checked=guestWeWantToEdit.rightHaded makes it to check if it is true
-
+//line 20: Ternaly true = checked, false = unchecked 
 
 contentTarget.addEventListener("click", (event) => {
     if(event.target.id.startsWith("saveNoteChanges")){
-        debugger
-
-       
-        
+        //debugger
+         
         // Make a new object representation of a note
         const editedGuest = {
             id: event.target.id.split("-")[1],// how can you get the note's id?
