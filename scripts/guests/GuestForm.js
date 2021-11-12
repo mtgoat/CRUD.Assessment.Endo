@@ -13,17 +13,17 @@ export const GuestForm = () => {
 
         <label for="guestImg">Guest Image</label><input type="text" name="guestImg" id="guestImg" placeholder="please enter an ulr for an image"/>
     
-    <label for="guestAge">Age</label>
-    <input type="number" name="guestAge" id="guestAge" min="0" max="100"/ placeholder="Please select your age here">
+        <label for="guestAge">Age</label>
+        <input type="number" name="guestAge" id="guestAge" min="0" max="100"/ placeholder="Please select your age here">
 
-    <label for="favoriteDish">Favorite Dish</label>
-    <input type="text" name="favoriteDish" id="favoriteDish" placeholder="Guest's favoriteDish goes here"/>
+        <label for="favoriteDish">Favorite Dish</label>
+        <input type="text" name="favoriteDish" id="favoriteDish" placeholder="Guest's favoriteDish goes here"/>
      
-   <label for="dominantHand">Select your dominant Hand for dinning</label>
-    <select name="rightHanded" id="rightHanded">
-       <option id="rightHandedTrue" value="true">Right Handed</option>
-       <option value="false" id="rightHandedFalse">Left Handed</option>
-   </select> 
+    <label for="dominantHand">Select your dominant Hand for dinning</label>
+        <select name="rightHanded" id="rightHanded">
+        <option id="rightHandedTrue" value="true">Right Handed</option>
+        <option value="false" id="rightHandedFalse">Left Handed</option>
+    </select> 
    
 <button id="saveGuestEntry">Save Guest Entry</button>
     `
@@ -104,3 +104,5 @@ eventHub.addEventListener("click", removeEvent => {
   
     }
   });
+
+  
